@@ -1,0 +1,100 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Portfolio</title>
+    <link href="style.css" rel="stylesheet" type="text/css">
+    <link rel="icon" href="images/paperclip.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+
+<body>
+    <nav class="nav-extended blue darken-4" id="test2">
+        <div class="nav-wrapper container">
+            <a href="#" class="brand-logo" id="test">Jeremy's Website</a>
+            <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+            <!-- this is a comment. UL stands for unordered list. -->
+            <ul class="right hide-on-med-and-down">
+                <li><a href="index.html">Home</a></li> <!-- li stands for list item -->
+                <li><a href="about.html">About</a></li>
+                <li><a href="resume.html"> Resume</a></li>
+                <li class="active"><a href="portfolio.html"> Portfolio</a></li>
+            </ul>
+        </div>
+        <div class="nav-content container">
+            <ul class="tabs tabs-transparent">
+                <li class="tab"><a href="#scratch">Scratch</a></li>
+                <li class="tab"><a href="#python">Python</a></li>
+            </ul>
+
+        </div>
+    </nav>
+    <div class="container">
+        <section id="scratch">
+            <a href="https://scratch.mit.edu/projects/259665491/">
+                <h3>Scratch Tennis</h3>
+            </a>
+            <img src="images/openingScreen.PNG">
+            <img src="images/gameplayScreen.PNG">
+            <h4> Overview</h4>
+            <p> A tennis simulator. You hit a ball and a cat returns it. Repeat. You
+                get points for every ball you hit. Where the balls land has a degree of
+                randomness. With each return, the ball gets faster. The game ends when
+                the ball goes out.</p>
+            <h4> Reflection</h4>
+            <p> I made the game because as a hobbyist tennis player, I feel very
+                inspired to create the game that I enjoy very much. <br> <br> Two
+                successful points were:</p>
+            <ol class="resumeList">
+                <li>The return system for the game was very fluid. The racquet would
+                    hit the ball at a very predictable manner
+                </li>
+                <li>
+                    The tennis court and movement look very realistic and 3D.
+                </li>
+            </ol>
+            <p>Two obstacles I solved were:</p>
+            <ol class="resumeList">
+                <li>The opponent couldn't be stationary because they would make the
+                    game less interactive, but I could not program a game win because it would add compelexity. I needed to add the illusion being able to win with the cat being able to easily deflect any ball.</li>
+                <li>The returns were difficult to program because I needed to add a degree of randomness, but not too much that the player would be constantly moving across the screen.</li>
+            </ol>
+            <img src="images/algorithm.PNG">
+            <p>These are the blocks responsible for the return mechanism. It is an algorithim because it is a series of commands. It works by when the racket touches the ball, it tells the ball to make a sound, move towards a slightly random
+                direction,
+                and move until it either touches the cat or is out. </p>
+            <img src="images/moreBlocks.PNG">
+        </section>
+        <section id="python">
+            <a href="https://repl.it/live/dbN6iVFgvzzbng">
+                <h3>3 Little Gremlins</h3>
+            </a>
+            <p>The player can take the point of view as one of three gremlins who attempt to journey far from their mother's home. They make choices in a twisted version of the classic "The 3 Little Pigs". It's a choose-your-own-adventure story where
+                the user faces frequent obstacles in their journey to find a place to call home.</p>
+            <a href="https://docs.google.com/drawings/d/1nji-W8ITeMwblCTp9DpRheiPq3kmYCm9fUKrOUMGZ0s/edit?usp=sharing" target="_BLANK"> <img src="images/Choose Your Own Adventure Program.png" width=100%></a>
+            <div>
+                <p>The incremental and iterative development processes of my program include the use of Google Drawings in order to sequentially develop the scenes of my story and the use of functions in order to isolate each
+                    scene in Python. Google Drawings was used to plan each scene and label the order the user would have to follow in order to reach an ending. In Python, each function would be its own individual scene and could branch out to other
+                    functions. We would then run the program and attempt to reach each ending. The isolation of each function meant that we would have to run each function in order to read any error messages. If any were found (many due to simple
+                    mistakes such as forgetting a quotation mark), the function would have to be revised. It was difficult to enable the user to have enough control over the story without making the story unnecessarily complex, so we attempted to
+                    compromise with as many decisions as possible.
+                </p>
+                <p>
+                    The organization of scenes of my story is a form of procedural abstraction because the functions can be diverted into multiple scenes. The advantages of abstracting your scenes into functions are that each
+                    scene is isolated from one another allowing for easy manipulation of each individual scene: being able to remove or add as many scenes as possible without disrupting the flow of the story.
+                </p>
+                <p> A story I particularly liked was <i>Ziggy’s</i> due to the absurdist humor present in the story. In addition to that, I really appreciated <i>Adventure Time</i> because it references a very well-made cartoon
+                    show.
+                </p>
+            </div>
+            <iframe height="400px" width="100%" src="https://repl.it/@JeremyNguyen2/3-Little-Gremlins?lite=true" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true"
+                sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe>
+            </a>
+        </section>
+    </div>
+</body>
+
+</html>
